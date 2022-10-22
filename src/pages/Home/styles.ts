@@ -29,7 +29,7 @@ export const FormContainer = styled.div`
 `
 
 const BaseInput = styled.input`
-  background: transparent;
+  background: transparent !important;
   height: 2.5rem;
   border: 0;
   border-bottom: 2px solid ${(props) => props.theme['gray-500']};
