@@ -29,7 +29,7 @@ export const FormContainer = styled.div`
 `
 
 const BaseInput = styled.input`
-  background: transparent !important;
+  background: transparent;
   height: 2.5rem;
   border: 0;
   border-bottom: 2px solid ${(props) => props.theme['gray-500']};
@@ -54,6 +54,11 @@ export const TaskInput = styled(BaseInput)`
 
   &::-webkit-calendar-picker-indicator {
     display: none !important;
+  }
+
+  &:-webkit-autofill,
+  &:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
   }
 `
 
